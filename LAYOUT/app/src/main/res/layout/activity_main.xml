@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Biodata Diri"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_marginVertical="70dp"
+            android:layout_marginStart="15dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:contentDescription="viewProfil"
+                app:srcCompat="@drawable/view_profil" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="176dp"
+            android:layout_marginVertical="76dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_radius"
+            android:fontFamily="@font/alatsi"
+            android:textColor="#000000"
+            android:justificationMode="inter_word"
+            android:padding="8dp"
+            android:text="Saya merupakan Mahasiswa Universitas Trunojoyo yang memiliki minat di bidang Keamanan Informasi dengan pengalaman Beginner. Saya telah belajar mengerjakan berbagai cara keamanan yang beragam dan belum berhasil mencapai hasil yang memuaskan. Saya sangat tertarik pada CyberSecurity.\nTerima kasih!"
+            android:textSize="11.8sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="285dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:background="@drawable/border_radius">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:paddingEnd="10dp"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Kukuh Cokro Wibowo"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Lahir"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/alatsi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Kediri"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/alatsi"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/alatsi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": 25 Juli 2003"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/alatsi"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/alatsi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"
+                    android:text=": Jln. Balai Desa Kelurahan Kasreman"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"
+                    android:text="  Kec. Kandangan, Kab. Kediri"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"
+                    android:text=": kukuhcokro411@gmail.com"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alatsi"
+                    android:textColor="#000000"
+                    android:text=": Happy Always"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media Sosial"
+            android:textAlignment="center"
+            android:layout_marginVertical="470dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="510dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="viewMedsos"
+                    app:srcCompat="@drawable/linkedin" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="viewMedsos"
+                    app:srcCompat="@drawable/github" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="viewMedsos"
+                    app:srcCompat="@drawable/instagram" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

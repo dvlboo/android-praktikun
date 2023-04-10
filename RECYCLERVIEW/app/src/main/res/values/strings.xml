@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recycler View Kukuh</string>
+    <string name="description">Deskripsi Superhero</string>
+    <string name="superheroes_name">Nama Superhero</string>
+</resources>
