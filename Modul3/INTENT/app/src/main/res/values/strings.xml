@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aplikasi Pembayaran Online</string>
+    <string name="halaman_utama">Halaman Utama</string>
+    <string name="sambutan">Selamat Datang !!!</string>
+    <string name="keterangan">Klik Salah Satu Diantara Dua Tombol Di Bawah Untuk Melakukan Intent Activity</string>
+    <string name="petunjuk">Tombol Intent !!!</string>
+</resources>

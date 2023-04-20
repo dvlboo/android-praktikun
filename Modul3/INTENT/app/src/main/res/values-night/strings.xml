@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="halaman_utama">Halaman Utama</string>
+    <string name="sambutan">Selamat Datang !!!</string>
+    <string name="keterangan">Klik Salah Satu Diantara Dua Tombol Di Bawah Untuk Melakukan Intent Activity</string>
+    <string name="petunjuk">Tombol Intent !!!</string>
+</resources>
