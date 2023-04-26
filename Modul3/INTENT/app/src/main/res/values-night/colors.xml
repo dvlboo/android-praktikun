@@ -5,4 +5,5 @@
     <color name="textSecondary">#FFFFFF</color>
     <color name="backgroundMainLayout">#00071E</color>
     <color name="cardViewBackground">#591F00</color>
+    <color name="iconCardView">#FF3D00</color>
 </resources>

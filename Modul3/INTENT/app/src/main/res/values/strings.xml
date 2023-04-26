@@ -4,4 +4,10 @@
     <string name="sambutan">Selamat Datang !!!</string>
     <string name="keterangan">Klik Salah Satu Diantara Dua Tombol Di Bawah Untuk Melakukan Intent Activity</string>
     <string name="petunjuk">Tombol Intent !!!</string>
+    <string name="aboutAplication">Tentang Aplikasi</string>
+    <string name="payment">Pembayaran</string>
+    <string name="medsos"><u>Sosial Media Developer</u></string>
+    <string name="judul_halaman"><u>Aplikasi Intent Pembayaran</u></string>
+    <string name="ket_halaman_paragraf1">\t\tAplikasi ini merupakan hasil implementasi praktikum Pemrograman Bergerak yang mana nantinya pengguna dapat membuka aplikasi pembayaran yang terdapat pada handphone pengguna.</string>
+    <string name="ket_halaman_paragraf2">\t\tPembuat Aplikasi ini bernama <b>Kukuh Cokro Wibowo</b> Program Studi <b>Sistem Informasi</b> di <i>Universitas Trunojoyo Madura</i></string>
 </resources>

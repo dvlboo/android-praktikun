@@ -5,4 +5,6 @@
     <color name="textSecondary">#000000</color>
     <color name="backgroundMainLayout">#FFFFFF</color>
     <color name="cardViewBackground">#C8D3E4</color>
+    <color name="iconCardView">#001AFF</color>
+    <color name="clickHover">#FCFEFF</color>
 </resources>
