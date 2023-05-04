@@ -1,6 +1,7 @@
 package com.example.aplikasipembayaranonline
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,13 +20,13 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
-//        val packageName = "com.gojek.wallet"
-//        val scheme = "gopay://gopay"
-//        val uri = Uri.parse(scheme)
+        val packageName = "com.gojek.app"
+        val scheme = "gojek://home"
+        val uri = Uri.parse(scheme)
         binding.cvPindahPembayaran.setOnClickListener(
             View.OnClickListener {
-                val intent = Intent(Intent.CATEGORY_APP_MAPS)
-//                intent.`package` = packageName
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                intent.`package` = packageName
                 startActivity(intent)
             }
         )
