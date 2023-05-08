@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -51,8 +52,8 @@ class DisplayFragment : Fragment() {
             }
     }
 
-    private lateinit var textViewData: TextView
-    private var data: String? = null
+    private lateinit var textView: TextView
+    private lateinit var button : Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -60,25 +61,26 @@ class DisplayFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_display, container, false)
-        textViewData = view.findViewById(R.id.textViewData)
+        textView = view.findViewById(R.id.textViewData)
+        button = view.findViewById(R.id.btBack)
+        button.setOnClickListener { backFragment() }
+
+
+
+        val bundle = arguments
+        if (bundle != null) {
+            val teks = bundle.getString("teks")
+            textView.text = teks
+        }
+
         return view
     }
+    private fun backFragment() {
 
-    fun updateData(data: String) {
-        this.data = data
-        textViewData.text = data
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val button = view.findViewById<Button>(R.id.buttonSubmit)
-
-        button.setOnClickListener{
-            parentFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragmentContainer, DisplayFragment())
-                .addToBackStack(null)
-                .commit()
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainer, InputFragment())
+            addToBackStack(null)
+            commit()
         }
     }
 

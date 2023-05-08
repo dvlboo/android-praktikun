@@ -52,14 +52,9 @@ class InputFragment : Fragment() {
             }
     }
 
-    private lateinit var editTextData: EditText
-    private lateinit var buttonSubmit: Button
+    private lateinit var editText: EditText
+    private lateinit var button: Button
 
-    interface OnDataSubmitListener {
-        fun onDataSubmit(data: String)
-    }
-
-    private var onDataSubmitListener: OnDataSubmitListener? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -67,32 +62,24 @@ class InputFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_input, container, false)
-        editTextData = view.findViewById(R.id.editTextData)
-        buttonSubmit = view.findViewById(R.id.buttonSubmit)
-        buttonSubmit.setOnClickListener {
-            val data = editTextData.text.toString()
-            onDataSubmitListener?.onDataSubmit(data)
-        }
+        editText = view.findViewById(R.id.editTextData)
+        button = view.findViewById(R.id.buttonSubmit)
+        button.setOnClickListener { pindahFragment() }
         return view
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val button = view.findViewById<Button>(R.id.buttonSubmit)
+    private fun pindahFragment() {
+        val teks = editText.text.toString()
+        val bundle = Bundle()
+        bundle.putString("teks", teks)
+        val secondFragment = DisplayFragment()
+        secondFragment.arguments = bundle
 
-        button.setOnClickListener{
-            parentFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragmentContainer, DisplayFragment())
-                .addToBackStack(null)
-                .commit()
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainer, secondFragment)
+            addToBackStack(null)
+            commit()
         }
     }
 
-
-
-
-    fun setOnDataSubmitListener(listener: OnDataSubmitListener) {
-        onDataSubmitListener = listener
-    }
 }
