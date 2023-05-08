@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".InputFragment"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/bg_fragmentinput">
 
     <EditText
         android:id="@+id/editTextData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan Text"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/buttonSubmit"
